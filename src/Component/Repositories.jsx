@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import useStore from './store/store';
-import './UserProfile.css'
+import './Repositories.css'
 const Repositories = () =>{
     const repositories = useStore((state) => state.repositories);
     const user = useStore((state) => state.user);

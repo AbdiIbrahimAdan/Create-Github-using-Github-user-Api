@@ -8,10 +8,15 @@ function App() {
   
   return (
     <>
-    <Header/>
-    <Search/>
-    <UserProfile/>
-    <Repositories/>
+    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+      <div style={{ width: '40vw', height: '90vh' }}>
+        <Search />
+        <UserProfile />
+      </div>
+      <div style={{ width: '60vw', height: '90vh' }}>
+        <Repositories />
+      </div>
+    </div>
     </>
   )
 }

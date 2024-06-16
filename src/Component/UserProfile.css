@@ -1,6 +1,5 @@
 .user-repo-container {
-    width: 40vw;
-    height: 100vh;
+    
     display: flex;
     flex-direction: column;
     background-color: #4d3e85; 
