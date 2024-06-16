@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import useStore from './store/store';
+import './Header/Header.css'
 const Search = () => {
     const [username, setUsername] = useState('');
     const setUser = useStore((state) => state.setUser);
@@ -33,7 +34,7 @@ const Search = () => {
         }
     };
     return (
-        <div>
+        <div className='search-container'>
             <input type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)} 
