@@ -30,7 +30,7 @@ const Search = () => {
             setFollowing([]);
         }
         catch (error){
-            console.log('There is an error!', error);
+            console.log('there was an error!', error);
         }
     };
     return (

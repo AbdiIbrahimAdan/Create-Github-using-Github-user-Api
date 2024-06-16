@@ -8,6 +8,7 @@ function App() {
   
   return (
     <>
+    <Header/>
     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
       <div style={{ width: '40vw', height: '90vh' }}>
         <Search />

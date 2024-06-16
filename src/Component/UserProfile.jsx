@@ -10,15 +10,15 @@ const UserProfile = () =>{
     useEffect(() => {
         const fetchDefaultUser = async () => {
             try{
-                const userResponse = await fetch(`https://api.github.com/users/$github`);
-                if (!userResponse.ok){
-                    throw new Error('there is a Network  problem' + userResponse.statusText);
+                const response = await fetch('https://api.github.com/users/$github');
+                if (!response.ok){
+                    throw new Error('there is a Network  problem' + response.statusText);
                 }
-                const userData = await userResponse.json();
+                const userData = await response.json();
                 setUser(userData);
     
         }catch (error){
-            console.log('There is an error!', error);
+            console.log('there was an error!', error);
         }
     };
     fetchDefaultUser();

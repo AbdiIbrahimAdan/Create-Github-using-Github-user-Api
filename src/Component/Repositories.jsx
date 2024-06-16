@@ -38,7 +38,7 @@ const Repositories = () =>{
             <div key={repo.id} className="repository-item">
                 <div className="repo-info">
                     <h3>{repo.name}</h3>
-                    <p>repo.description</p>
+                    <p>{repo.description}</p>
                 </div>
                 <div className='repo-stats'>
                     <span>Forks: {repo.forks_count}</span>
