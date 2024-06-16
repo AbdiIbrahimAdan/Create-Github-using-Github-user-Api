@@ -1,6 +1,10 @@
 import React,{useState, useEffect} from 'react';
 import useStore from './store/store';
+import { FaStar } from "react-icons/fa6";
+import { FaCodeFork } from "react-icons/fa6";
 import './Repositories.css'
+import Followers from './Followers';
+import Following from './Following';
 const Repositories = () =>{
     const repositories = useStore((state) => state.repositories);
     const user = useStore((state) => state.user);
@@ -41,12 +45,14 @@ const Repositories = () =>{
                     <p>{repo.description}</p>
                 </div>
                 <div className='repo-stats'>
-                    <span>Forks: {repo.forks_count}</span>
-                    <span>Stars: {repo.starsgazers_count}</span>
+                    <span><FaCodeFork />: {repo.forks_count}</span>
+                    <span><FaStar /> :{repo.stargazers_count}</span>
                 </div>
             </div>
             ))}
         </div>
+        <Followers />
+      <Following />
     </div>
    )
 }   

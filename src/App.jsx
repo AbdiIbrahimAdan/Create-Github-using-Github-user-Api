@@ -4,6 +4,7 @@ import Header from './Component/Header/Header';
 import Repositories from './Component/Repositories';
 import Search from './Component/Search';
 import UserProfile from './Component/UserProfile';
+
 function App() {
   
   return (
@@ -16,6 +17,7 @@ function App() {
       </div>
       <div style={{ width: '60vw', height: '90vh' }}>
         <Repositories />
+     
       </div>
     </div>
     </>

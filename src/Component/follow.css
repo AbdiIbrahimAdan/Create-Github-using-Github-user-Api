@@ -1,0 +1,53 @@
+.followers-following {
+    margin-top: 20px;
+  }
+  
+  .users-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .user-item {
+    background-color: #dfcdcd;
+    padding: 16px;
+    border-radius: 8px;
+    width: 200px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-item h3 {
+    margin-top: 0;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: 80px;
+  }
+  
+  .button {
+    background-color: #333;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 2px;
+    margin-left: -15px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
