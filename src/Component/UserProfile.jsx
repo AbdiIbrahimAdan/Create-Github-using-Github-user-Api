@@ -10,7 +10,7 @@ const UserProfile = () =>{
     useEffect(() => {
         const fetchDefaultUser = async () => {
             try{
-                const response = await fetch('https://api.github.com/users/$github');
+                const response = await fetch('https://api.github.com/users/github');
                 if (!response.ok){
                     throw new Error('there is a Network  problem' + response.statusText);
                 }
