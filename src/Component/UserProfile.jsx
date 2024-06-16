@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import useStore from './store/store';
+import { FaLocationDot } from "react-icons/fa6";
 import './UserProfile.css';
 const UserProfile = () =>{
     const user = useStore((state) => state.user);
@@ -32,13 +33,15 @@ if (!user){
                 <img src={user.avatar_url} alt={user.login} className='avatar'/>
                 <h2>{user.name || user.login}</h2>
                 <p>{user.bio}</p>
-                <p>Location:{user.location}</p>
+                <a href={user.html_url} target='_blank'>View on Github</a>
+               
                 <div className="followers-following-count">
+                <p className='location'><FaLocationDot />:{user.location}</p>
                     <span>Followers: {user.followers}</span>
                     <span>Following: {user.following}</span>
                     <span>Repositories: {user.public_repos}</span>
                 </div>
-                <a href={user.html_url} target='_blank'>View on Github</a>
+                
             </div>
         </div>
     );
