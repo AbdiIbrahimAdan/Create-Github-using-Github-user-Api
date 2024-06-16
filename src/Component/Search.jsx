@@ -17,6 +17,13 @@ const Search = () => {
             const userData = await userResponse.json();
             setUser(userData);
 
+        const reposResponse = await fetch(`https://api.github.com/users/${username}/repos?per_page=30`);
+        if (!reposResponse.ok){
+            throw new Error('there is a Network  problem' + reposResponse.statusText);
+        }
+        const reposData = await reposResponse.json();
+        setRepositories(reposData);
+
             
             setFollowers([]);
             setFollowing([]);
