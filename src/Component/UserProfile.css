@@ -5,6 +5,7 @@
     background-color: #4d3e85; 
     padding: 20px;
     gap: 20px; 
+    position: fixed;
   }
   
   .user-profile {
