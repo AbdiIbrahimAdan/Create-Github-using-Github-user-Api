@@ -29,7 +29,7 @@ const Following = () => {
 
   return (
     <div className="followers-following">
-      <h2>Following</h2>
+      <h2>Following (30)</h2>
       <div className="users-grid">
         {following.length > 0 ? (
           following.map((follow) => (
@@ -37,7 +37,7 @@ const Following = () => {
               <img src={follow.avatar_url} alt={follow.login} className="avatar" />
               <div className="user-info">
                 <h3>{follow.login}</h3>
-                <a href={follow.html_url} target="_blank" rel="noopener noreferrer" className="button">
+                <a href={follow.html_url} target="_blank" className="button">
                 <IoUnlink /> View on GitHub
                 </a>
               </div>

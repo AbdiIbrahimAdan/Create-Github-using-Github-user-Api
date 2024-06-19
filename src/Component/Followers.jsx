@@ -28,7 +28,7 @@ const Followers = () => {
 
   return (
     <div className="followers-following">
-      <h2>Followers</h2>
+      <h2>Followers (30)</h2>
       <div className="users-grid">
         {followers.length > 0 ? (
           followers.map((follower) => (

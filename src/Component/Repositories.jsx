@@ -36,7 +36,7 @@ const Repositories = () =>{
    };
    return (
     <div>
-        <h2>Repositories </h2>
+        <h2>Repositories (30)</h2>
         <div className="repositories-list">
             {repositories.map((repo) =>(
             <div key={repo.id} className="repository-item">
